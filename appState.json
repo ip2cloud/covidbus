@@ -49,14 +49,9 @@
         "type": "API_GATEWAY",
         "config": {
           "selectedRegion": "us-east-1",
-          "apiMode": 1,
+          "apiMode": 0,
           "apiName": "SMSGateway",
-          "apiId": "zwabizp2vi",
           "endpointType": "EDGE",
-          "rootResourceId": "27l5yrr4ei",
-          "existingResources": {
-            "/": "27l5yrr4ei"
-          },
           "resourceMode": 0,
           "resourceName": "covidbus",
           "resourcePath": "/covidbus",
@@ -65,7 +60,7 @@
           "enableCORS": true,
           "stageMode": 0,
           "stageName": "test",
-          "mode": 1
+          "mode": 0
         }
       },
       "snsDirectSMSResource": {
@@ -114,7 +109,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1587701487810
+    "lastSave": 1587701676277
   },
   "VCS_STATE": {
     "provider": "GitHub",
