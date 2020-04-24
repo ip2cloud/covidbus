@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "covidbus.js",
         "cursor": {
-          "lineNumber": 25,
-          "column": 14
+          "lineNumber": 21,
+          "column": 42
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -56,7 +56,7 @@
           "resourceName": "covidbus",
           "resourcePath": "/covidbus",
           "restMethod": "POST",
-          "proxyIntegration": false,
+          "proxyIntegration": true,
           "enableCORS": false,
           "stageMode": 0,
           "stageName": "test",
@@ -109,7 +109,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1587714487103
+    "lastSave": 1587731929409
   },
   "VCS_STATE": {
     "provider": "GitHub",
