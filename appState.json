@@ -59,7 +59,7 @@
           "proxyIntegration": false,
           "enableCORS": true,
           "stageMode": 0,
-          "stageName": "test",
+          "stageName": "prod",
           "mode": 0
         }
       },
@@ -109,7 +109,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1587701676277
+    "lastSave": 1587702001202
   },
   "VCS_STATE": {
     "provider": "GitHub",
