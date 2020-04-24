@@ -1,0 +1,127 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "81ff93ab-68c4-402c-b1ec-f2aa1bbd36ba": {
+        "id": "81ff93ab-68c4-402c-b1ec-f2aa1bbd36ba",
+        "parent": null,
+        "name": "covidbus.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "covidbus.js",
+        "cursor": {
+          "lineNumber": 26,
+          "column": 22
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "covidbus"
+        },
+        "triggers": [
+          {
+            "resourceName": "apigusEast1SMSGatewaycovidbuspost",
+            "config": {}
+          }
+        ],
+        "testCases": {
+          "173ddff3-5c6e-4204-97e5-a04e70d29c45": {
+            "id": "173ddff3-5c6e-4204-97e5-a04e70d29c45",
+            "name": "teste",
+            "functionId": "81ff93ab-68c4-402c-b1ec-f2aa1bbd36ba",
+            "event": "{\n    \"receiver\": \"+5581996879227\",\n    \"sender\": \"IP2\",\n    \"message\": \"Eu sou foda!\"\n}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      }
+    },
+    "openFiles": [
+      "81ff93ab-68c4-402c-b1ec-f2aa1bbd36ba"
+    ],
+    "currentFileId": "81ff93ab-68c4-402c-b1ec-f2aa1bbd36ba",
+    "resources": {
+      "apigusEast1SMSGatewaycovidbuspost": {
+        "name": "apigusEast1SMSGatewaycovidbuspost",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 1,
+          "apiName": "SMSGateway",
+          "apiId": "zwabizp2vi",
+          "endpointType": "EDGE",
+          "rootResourceId": "27l5yrr4ei",
+          "existingResources": {
+            "/": "27l5yrr4ei",
+            "/covidsms": "y5s9y1"
+          },
+          "resourceMode": 0,
+          "resourceName": "covidbus",
+          "resourcePath": "/covidbus",
+          "restMethod": "POST",
+          "proxyIntegration": false,
+          "enableCORS": true,
+          "stageMode": 0,
+          "stageName": "test",
+          "mode": 1
+        }
+      },
+      "snsDirectSMSResource": {
+        "name": "snsDirectSMSResource",
+        "type": "SNS",
+        "config": {
+          "snsType": 1,
+          "numbers": [
+            "@{receiver}"
+          ]
+        }
+      }
+    },
+    "customTemplate": {
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "aws-sdk": {
+          "name": "aws-sdk",
+          "language": "nodejs",
+          "version": "2.644.0",
+          "dev": true,
+          "notRemovable": false
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "covidbus",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "language": "nodejs",
+    "platformRegions": {},
+    "lastSave": 1587693770613
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "covidbus",
+      "url": "https://github.com/ip2cloud/covidbus"
+    }
+  }
+}
