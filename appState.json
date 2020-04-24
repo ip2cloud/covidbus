@@ -61,7 +61,7 @@
           "resourceName": "covidbus",
           "resourcePath": "/covidbus",
           "restMethod": "POST",
-          "proxyIntegration": true,
+          "proxyIntegration": false,
           "enableCORS": true,
           "stageMode": 0,
           "stageName": "test",
@@ -114,7 +114,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1587700718427
+    "lastSave": 1587701487810
   },
   "VCS_STATE": {
     "provider": "GitHub",
